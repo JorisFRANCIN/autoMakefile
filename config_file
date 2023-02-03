@@ -1,0 +1,22 @@
+EXEC_NAME
+basic
+SOURCES_DIR
+/src/main.c
+/src/calculus.c
+/src/error_managment.c
+PROJECT_DIR
+./test
+CC
+gcc -o $(EXEC_NAME) $(SOURCES_DIR)
+LDFLAGS
+-lcsfml-graphics -lcsfml-window
+ALL
+all: $(NAME)
+CLEAN
+
+rm -f *.o
+FCLEAN
+clean
+rm -f $(EXEC_NAME)
+RE
+fclean all
